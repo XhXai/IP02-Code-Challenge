@@ -3,7 +3,7 @@
 #### In this project I'm going to be implementing a mini web app to practice on components, props, state, events and data fetching in react. Created on the 01/05/2023.
 
 ## Mini Web App
-In this web app, you should be able to see table of all transactions, Fill out and submit the form to add a new transaction. This should add the new transaction to the table, Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
+In this web app, I’ll be building out a React application that displays a list of available bots, among other features. The user will be able to see profiles of all bots, add an individual bot to my army by clicking on it, release a bot from my army by clicking on it, Discharge a bot from their service forever.
 
 ## Technologies Used.
 In this particular code challenge I used Reactjs programming language,Visual Studio Code to write the code and Github to store the code.
