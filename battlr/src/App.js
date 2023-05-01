@@ -13,13 +13,13 @@ function App() {
   };
 
   const releaseFromArmy = (bot) => {
-    const updatedArmy = army.filter((b) => b.id !== bot.id);
+    const updatedArmy = army.filter((bot) => bot.id !== bot.id);
     setArmy(updatedArmy);
   };
 
   const dischargeBot = async (bot) => {
     try{
-      await fetch('http://localhost:4000/bots/${bot.id}', {
+      await fetch('http://localhost:3000/bots/${bot.id}', {
         method: "DELETE",
       });
       releaseFromArmy(bot);

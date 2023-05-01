@@ -1,4 +1,4 @@
-import React from './react'
+import React from 'react'
 
 function Bot(props){
     const { bot, onAddToArmy, onReleaseFromArmy, onDischarge } = props;
@@ -39,6 +39,7 @@ function Bot(props){
             }
         </div>
     );
+      
 }
 
 export default Bot;
