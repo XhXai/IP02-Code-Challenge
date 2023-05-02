@@ -19,7 +19,7 @@ function App() {
 
   const dischargeBot = async (bot) => {
     try{
-      await fetch('http://localhost:3000/bots/${bot.id}', {
+      await fetch('https://bot-qyvv.onrender.com/bots/${bot.id}', {
         method: "DELETE",
       });
       releaseFromArmy(bot);
@@ -31,12 +31,12 @@ function App() {
     <div className='app'>
       <h1>Bot</h1>
       <div className='section-bot'>
-        <BotCollection onAddToArmy={addtToArmy} />
-        <YourBotArmy 
+      <YourBotArmy 
           army={army}
           onReleaseFromArmy={releaseFromArmy}
           onDischarge={dischargeBot}
         />
+        <BotCollection onAddToArmy={addtToArmy} />
       </div>
     </div>
   );
