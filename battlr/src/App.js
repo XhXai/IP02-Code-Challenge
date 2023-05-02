@@ -31,12 +31,12 @@ function App() {
     <div className='app'>
       <h1>Bot</h1>
       <div className='section-bot'>
-      <YourBotArmy 
+        <BotCollection onAddToArmy={addtToArmy} />
+        <YourBotArmy 
           army={army}
           onReleaseFromArmy={releaseFromArmy}
           onDischarge={dischargeBot}
         />
-        <BotCollection onAddToArmy={addtToArmy} />
       </div>
     </div>
   );
